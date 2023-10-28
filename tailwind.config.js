@@ -7,11 +7,28 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      // backgroundImage: {
+      //   'inner-about': "url('/src/app/assets/inner-pagebg.jpg')",
+        
+      // },
+      fontFamily:{
+        'nunito':['Nunito Sans', "sans-serif"],
+        'Inter': ['Inter', 'sans-serif'],
+        'Outfit': [ 'Outfit', "sans-serif"]
       },
+      
+      colors: {
+        'primary-color': "#1ECB15",
+        'secondary-color': "#179510",
+        'blue-text': "#031B4E",
+        'black-bg': "#121212",
+        'gray-text': "#cccccc",
+        'text-black': "#333333",
+        'border-color': "#031b4e80"
+        
+      },
+     
+
     },
   },
   plugins: [],
