@@ -56,18 +56,18 @@ const VehicleFleet = () => {
 
   return (
     <>
-      <section className=' md:py-[90px] md:px-[115px]'>
+      <section className=' overflow-hidden  py-[60px] px-[30px] md:py-[90px] md:px-[115px]'>
              <div className=' flex flex-col items-center justify-center'>
                      <p className=' w-fit font-Inter font-bold bg-gray-text text-primary-color rounded-[5px] px-[10px] py-[2px] mb-[5px]'>Enjoy Your Ride</p>
                      <h2 className=' font-semibold text-blue-text mb-[10px] text-[42px] tracking-tight leading-[50px]'>Our Vehicle Fleet</h2>
                      <p className='   text-center text-blue-text drop-shadow-md' >Driving your dreams to reality with an exquisite fleet of versatile vehicles</p>
                      <p className='mb-[20px] text-blue-text drop-shadow-md'>  for unforgettable journeys.</p>
              </div>
-             <div className=' relative'>
-             <Slider {...settings}>
-                   <div className=' bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
+             <div className=' relative   '>
+             <Slider {...settings} className='  '>
+                   <div className='     bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
                          <div>
-                             <Image src={vecile} alt=''  className=' w-[333px] h-[187px] rounded-[6px]' />
+                             <Image src={vecile} alt=''  className=' w-full md:w-[333px] h-[187px] rounded-[6px]' />
                          </div>
                          <div className='p-[20px]'>
                             <div className=' flex items-center justify-between'>
@@ -106,7 +106,7 @@ const VehicleFleet = () => {
                             
                          </div>
                    </div>
-                   <div className=' bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
+                   <div className='   bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
                          <div>
                              <Image src={vecile1} alt=''  className=' w-[333px] h-[187px] rounded-[6px]' />
                          </div>
@@ -147,7 +147,7 @@ const VehicleFleet = () => {
                             
                          </div>
                    </div>
-                   <div className=' bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
+                   <div className='   bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
                          <div>
                              <Image src={vecile2} alt=''  className=' w-[333px] h-[187px] rounded-[6px]' />
                          </div>
@@ -188,7 +188,7 @@ const VehicleFleet = () => {
                             
                          </div>
                    </div>
-                   <div className=' bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
+                   <div className='   bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
                          <div>
                              <Image src={vecile3} alt=''  className=' w-[333px] h-[187px] rounded-[6px]' />
                          </div>
@@ -229,7 +229,7 @@ const VehicleFleet = () => {
                             
                          </div>
                    </div>
-                   <div className=' bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
+                   <div className='   bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
                          <div>
                              <Image src={vecile4} alt=''  className=' w-[333px] h-[187px] rounded-[6px]' />
                          </div>

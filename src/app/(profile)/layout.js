@@ -12,7 +12,7 @@ const layout = ({children}) => {
   return (
     <> 
       <Innerprofile />
-       <div className=' py-[60px] md:py-[90px] px-[30px] md:px-[115px] bg-[#F5F8FA]'>
+       <div className=' py-[90px] px-[30px] md:px-[115px] bg-[#F5F8FA]'>
           <div className=' grid md:grid-cols-12 gap-[26px]'>
             <div className=' grid md:col-span-3 bg-slate-300 h-fit '>
                 <div className='  bg-white p-[30px] rounded-[10px]   shadow-lg'>

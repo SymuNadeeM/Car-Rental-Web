@@ -7,7 +7,7 @@ const page = () => {
   return (
     <>
         <InnerNews />
-        <section className=' py-[60px] md:py-[90px] px-[90px] md:px-[115px]'>
+        <section className=' py-[90px] md:py-[90px] px-[30px] md:px-[115px]'>
              <div className=' grid md:grid-cols-12 gap-[50px]'>
                 <div className=' grid  md:col-span-8'>
                         <NewsCard />

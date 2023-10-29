@@ -17,10 +17,10 @@ import Link from 'next/link'
 const CardCar = () => {
   return (
     <>
-       <div  className=' grid grid-cols-3 gap-[26px]' >
+       <div  className=' grid md:grid-cols-3 gap-[26px]' >
          <div className='  bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd]  '>
                          <div>
-                             <Image src={vecile1} alt=''  className=' w-[239px] h-[134px] rounded-[6px]' />
+                             <Image src={vecile1} alt=''  className=' w-full md:w-[239px] md:h-[134px] rounded-[6px]' />
                          </div>
                          <div className='p-[20px]'>
                             <div className=' flex items-center justify-between'>
@@ -61,7 +61,7 @@ const CardCar = () => {
          </div>
          <div className='  bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd]  '>
                          <div>
-                             <Image src={vecile2} alt=''  className=' w-[239px] h-[134px] rounded-[6px]' />
+                             <Image src={vecile2} alt=''  className=' w-full md:w-[239px] md:h-[134px] rounded-[6px]' />
                          </div>
                          <div className='p-[20px]'>
                             <div className=' flex items-center justify-between'>
@@ -102,7 +102,7 @@ const CardCar = () => {
          </div>
          <div className='  bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd]  '>
                          <div>
-                             <Image src={vecile3} alt=''  className=' w-[239px] h-[134px] rounded-[6px]' />
+                             <Image src={vecile3} alt=''  className=' w-full md:w-[239px] md:h-[134px]rounded-[6px]' />
                          </div>
                          <div className='p-[20px]'>
                             <div className=' flex items-center justify-between'>
@@ -143,7 +143,7 @@ const CardCar = () => {
          </div>
          <div className='  bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd]  '>
                          <div>
-                             <Image src={vecile4} alt=''  className=' w-[239px] h-[134px] rounded-[6px]' />
+                             <Image src={vecile4} alt=''  className=' w-full md:w-[239px] md:h-[134px] rounded-[6px]' />
                          </div>
                          <div className='p-[20px]'>
                             <div className=' flex items-center justify-between'>
@@ -184,7 +184,7 @@ const CardCar = () => {
          </div>
          <div className='  bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd]  '>
                          <div>
-                             <Image src={vecile5} alt=''  className=' w-[239px] h-[134px] rounded-[6px]' />
+                             <Image src={vecile5} alt=''  className=' w-full md:w-[239px] md:h-[134px] rounded-[6px]' />
                          </div>
                          <div className='p-[20px]'>
                             <div className=' flex items-center justify-between'>
@@ -225,7 +225,7 @@ const CardCar = () => {
          </div>
          <div className='  bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd]  '>
                          <div>
-                             <Image src={vecile6} alt=''  className=' w-[239px] h-[134px] rounded-[6px]' />
+                             <Image src={vecile6} alt=''  className=' w-full md:w-[239px] md:h-[134px] rounded-[6px]' />
                          </div>
                          <div className='p-[20px]'>
                             <div className=' flex items-center justify-between'>
@@ -266,7 +266,7 @@ const CardCar = () => {
          </div>
          <div className='  bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd]  '>
                          <div>
-                             <Image src={vecile7} alt=''  className=' w-[239px] h-[134px] rounded-[6px]' />
+                             <Image src={vecile7} alt=''  className=' w-full md:w-[239px] md:h-[134px] rounded-[6px]' />
                          </div>
                          <div className='p-[20px]'>
                             <div className=' flex items-center justify-between'>
@@ -307,7 +307,7 @@ const CardCar = () => {
          </div>
          <div className='  bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd]  '>
                          <div>
-                             <Image src={vecile8} alt=''  className=' w-[239px] h-[134px] rounded-[6px]' />
+                             <Image src={vecile8} alt=''  className=' w-full md:w-[239px] md:h-[134px] rounded-[6px]' />
                          </div>
                          <div className='p-[20px]'>
                             <div className=' flex items-center justify-between'>
@@ -348,7 +348,7 @@ const CardCar = () => {
          </div>
          <div className='  bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd]  '>
                          <div>
-                             <Image src={vecile4} alt=''  className=' w-[239px] h-[134px] rounded-[6px]' />
+                             <Image src={vecile4} alt=''  className=' w-full md:w-[239px] md:h-[134px] rounded-[6px]' />
                          </div>
                          <div className='p-[20px]'>
                             <div className=' flex items-center justify-between'>
@@ -389,7 +389,7 @@ const CardCar = () => {
          </div>
          <div className='  bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd]  '>
                          <div>
-                             <Image src={vecile2} alt=''  className=' w-[239px] h-[134px] rounded-[6px]' />
+                             <Image src={vecile2} alt=''  className=' w-full md:w-[239px] md:h-[134px] rounded-[6px]' />
                          </div>
                          <div className='p-[20px]'>
                             <div className=' flex items-center justify-between'>
@@ -430,7 +430,7 @@ const CardCar = () => {
          </div>
          <div className='  bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd]  '>
                          <div>
-                             <Image src={vecile7} alt=''  className=' w-[239px] h-[134px] rounded-[6px]' />
+                             <Image src={vecile7} alt=''  className=' w-full md:w-[239px] md:h-[134px] rounded-[6px]' />
                          </div>
                          <div className='p-[20px]'>
                             <div className=' flex items-center justify-between'>
@@ -471,7 +471,7 @@ const CardCar = () => {
          </div>
          <div className='  bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd]  '>
                          <div>
-                             <Image src={vecile2} alt=''  className=' w-[239px] h-[134px] rounded-[6px]' />
+                             <Image src={vecile2} alt=''  className=' w-full md:w-[239px] md:h-[134px] rounded-[6px]' />
                          </div>
                          <div className='p-[20px]'>
                             <div className=' flex items-center justify-between'>

@@ -113,7 +113,7 @@ const Navbar = () => {
                <FiMenu  size={30} />
                </div>
              </div>
-             <div className={ menuOpen ? "fixed left-[-100%] duration-200" : "fixed z-50 left-0 top-0 w-[60%] h-full overflow-auto  ease-in-out duration-700 bg-[#acacac]"}>
+             <div className={ menuOpen ?"fixed z-50 left-0 top-0 w-[60%] h-full overflow-auto  ease-in-out duration-700 bg-[#acacac]" :"fixed left-[-100%] duration-200"}>
             <div className=" ">
                  <div className=" flex items-center justify-between p-[12px] bg-white ">
                       <Link href={"/"} className="flex mr-[30px] relative">

@@ -12,7 +12,7 @@ const BannerCard = () => {
            {/* <div className='mt-[-150px] z-50'> */}
       
      
-             <div className='  mx-[118px] border-[2px] border-red-600'>
+             <div className='  my-[90px] mx-[30px]  md:mx-[118px]  shadow-lg border-[.8px] border-primary-color'>
                    <div className=' bg-white rounded-[3px] p-[1.5rem]'>
                        <div className=' grid md:grid-cols-2 gap-[1.5rem]'>
                             <div>
@@ -66,7 +66,7 @@ const BannerCard = () => {
                                 </div>
                             </div>
                        </div>
-                       <div className=' mt-[15px] flex justify-end items-center'>
+                       <div className=' mt-[15px] flex justify-start md:justify-end items-center'>
                        <div className='  w-fit  bg-primary-color rounded-[5px] text-white'>
                             <button type='submit' className=' font-extrabold text-[14px] px-[30px] py-[8px]'>Find a Vehicle</button>
                        </div>
