@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-
+import inner from '../assets/carlistinner.jpg'
 import car1 from "../assets/car 1png.png"
 import van from "../assets/van.png"
 import minibus from "../assets/minibus.png"
@@ -9,7 +9,10 @@ import prestige from "../assets/sportscar.png"
 const BannerCard = () => {
   return (
     <>
-      <div className='  mx-[118px]  border-[2px] border-red-600'>
+           {/* <div className='mt-[-150px] z-50'> */}
+      
+     
+             <div className='  mx-[118px] border-[2px] border-red-600'>
                    <div className=' bg-white rounded-[3px] p-[1.5rem]'>
                        <div className=' grid md:grid-cols-2 gap-[1.5rem]'>
                             <div>
@@ -69,8 +72,12 @@ const BannerCard = () => {
                        </div>
                        </div>
                    </div>
-          </div>
+            </div>
+            
+          {/* </div>      */}
+     
     </>
+
   )
 }
 

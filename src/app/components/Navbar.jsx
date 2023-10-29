@@ -9,6 +9,19 @@ import logo from "../assets/logo.png"
 import React, { useState } from 'react'
 
 const Navbar = () => {
+
+   const [colorChange, setColorChange] = useState(false)
+
+   const changeNavbarColor =()=>{
+    if(window.scrollY >= 80){
+      setColorChange(true)
+    }
+    else{
+      setColorChange(false)
+    }
+   }
+   window.addEventListener('scroll', changeNavbarColor)
+
  
   const [menuOpen,setmenuOpen] = useState(false)
   const [isOpen, setIsOpen] =useState(false)
@@ -20,19 +33,14 @@ const Navbar = () => {
 
   return (
     <>
-      <div className=' hidden md:flex bg-white  md:px-[100px] '>
+      <div className={colorChange?" hidden md:flex  fixed top-0 left-0 duration-500 right-0 z-50 bg-white text-blue-text  md:px-[100px] ":" duration-500 hidden md:flex  bg-transparent text-white  md:px-[100px]"}>
          <div className='px-[15px] flex items-center justify-between gap-[102px]'>
-            
-             
-             
                <Link href={'/'}>
-                   <Image src={logo}  alt=';' />
+                   <Image src={logo}  alt=';'  />
                </Link>
-             
-              
                  <nav>
-                 <ul className=' flex  items-center  text-blue-text font-medium text-[15px] font-Inter'>
-                    <li className='py-[30px] pl-[30px] relative  group'><Link href={"/"} className=' flex items-center font-medium gap-1'>Home <FiChevronDown /></Link> 
+                 <ul className={colorChange?"flex  items-center  text-blue-text font-medium text-[15px] font-Inter":"flex  items-center  text-white font-medium text-[15px] font-Inter"}>
+                    <li className='py-[30px] pl-[30px] relative  group'><Link href={"/"} className=' flex items-center  font-medium gap-1'>Home <FiChevronDown /></Link> 
                         <ul className="z-10  absolute duration-300  invisible group-hover:visible text-text-black font-medium text-[15px] font-Inter bg-white rounded-[3px]  mt-[30px]  w-[190px]  h-auto shadow-xl">
                             <li className=" border-b-[1px] border-[#ffffff1a] px-[15px] py-[5px] hover:bg-secondary-color hover:text-white duration-300" ><Link href={"/"} >New: Homepage Dark</Link> </li>
                             <li className=" border-b-[1px] border-[#ffffff1a] px-[15px] py-[5px] hover:bg-secondary-color hover:text-white duration-300" ><Link href={"/"} >Homepage Main</Link> </li>
@@ -53,7 +61,6 @@ const Navbar = () => {
                             <li className=" border-b-[1px] border-[#ffffff1a] px-[15px] py-[5px] hover:bg-secondary-color hover:text-white duration-300" ><Link href={"/"} >Cars List 1 Dark</Link> </li>
                             <li className=" border-b-[1px] border-[#ffffff1a] px-[15px] py-[5px] hover:bg-secondary-color hover:text-white duration-300" ><Link href={"/"} >Cars single</Link> </li>
                             <li className=" border-b-[1px] border-[#ffffff1a] px-[15px] py-[5px] hover:bg-secondary-color hover:text-white duration-300" ><Link href={"/"} >Cars single dark</Link> </li>
-
                        </ul>
                     
                     </li>
@@ -64,8 +71,6 @@ const Navbar = () => {
                             <li className=" border-b-[1px] border-[#ffffff1a] px-[15px] py-[5px] hover:bg-secondary-color hover:text-white duration-300" ><Link href={"/myprofile"} >My Profile</Link> </li>
                             <li className=" border-b-[1px] border-[#ffffff1a] px-[15px] py-[5px] hover:bg-secondary-color hover:text-white duration-300" ><Link href={"/myfavo"} >My Orders</Link> </li>
                             <li className=" border-b-[1px] border-[#ffffff1a] px-[15px] py-[5px] hover:bg-secondary-color hover:text-white duration-300" ><Link href={"/myfavo"} >My Favorite Cars</Link> </li>
-
-
                        </ul>
                     
                     </li>
@@ -76,8 +81,6 @@ const Navbar = () => {
                             <li className=" border-b-[1px] border-[#ffffff1a] px-[15px] py-[5px] hover:bg-secondary-color hover:text-white duration-300" ><Link href={"/login"} >Login</Link> </li>
                             <li className=" border-b-[1px] border-[#ffffff1a] px-[15px] py-[5px] hover:bg-secondary-color hover:text-white duration-300" ><Link href={"/register"} >Register</Link> </li>
                             <li className=" border-b-[1px] border-[#ffffff1a] px-[15px] py-[5px] hover:bg-secondary-color hover:text-white duration-300" ><Link href={"/"} >404 Page</Link> </li>
-
-
                        </ul>
                     
                     </li>
@@ -90,17 +93,14 @@ const Navbar = () => {
                     </li>
                     <li className='py-[30px] pl-[30px]'><Link href={"/"}>Elements</Link> </li>
                     
-                 </ul>
-                 </nav>
-              
-              
+                  </ul>
+              </nav>
                 <button className=' font-bold text-[14px] text-white bg-primary-color rounded-[5px] py-[6px] px-[26px]'><Link href={''}>Sing In</Link></button>
-              
-        
-       </div> 
+            </div> 
       </div> 
-
-       <div className=' md:hidden bg-white w-full h-[80px] px-[20px]'>
+       
+       {/* small sceen */}
+       <div className=' md:hidden fixed top-0 right-0 left-0 z-50 bg-white w-full h-[80px] px-[20px]'>
            
             <div className=' flex items-center   justify-between'>
                {/* logo */}
@@ -122,7 +122,7 @@ const Navbar = () => {
                       </Link>
                      <GrFormClose onClick={handlemenu}   className=" w-[36px] h-[36px] p-[4px] mt-[4px] text-white bg-primary-color" />
                 </div> 
-              <nav className="py-[10px] snap-y">
+              <nav className="py-[10px] snap-y z-40">
                 <ul>
                   <li className=" relative h-auto  px-[20px]">
                    <div onClick={()=> setIsOpen(!isOpen)} className=" flex items-center justify-between  border-b-[1px] border-[#eee]  ">
