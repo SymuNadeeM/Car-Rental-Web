@@ -8,6 +8,7 @@ import Promo from './Promo'
 import Testimonial from './Testimonial'
 import Question from './Question'
 import CallContact from './CallContact'
+import ScrollButton from '../components/ScrollButton'
 
 function Homepage() {
   return (
@@ -21,6 +22,7 @@ function Homepage() {
       <Testimonial />
       <Question />
       <CallContact />
+      <ScrollButton />
     </>
   )
 }
