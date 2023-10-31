@@ -1,13 +1,21 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import Slider,{ Range } from 'rc-slider';
+import {LuBadgeDollarSign} from 'react-icons/lu'
 import 'rc-slider/assets/index.css';
+
 
 //https://www.npmjs.com/package/rc-slider
 
+// const MIN = 100;
+// const MAX = 12000;
 
 const Checkbutton = () => {
+  
+  const[pricedata,setPricedata] = useState(0)
 
+  // const [values, setValues] = useState( [MIN, MAX])
+  // console.log("vales", values);
     
   return (
     <>
@@ -123,6 +131,7 @@ const Checkbutton = () => {
       
 
       </div>
+      
       <div className=' w-full h-fit  bg-white  border-[1px] border-[#00000026] shadow-lg p-[25px] rounded-[6px]'>
          <h4 className='  mb-[15px] leading-[26px]  text-[17px]  text-blue-text font-semibold font-Outfit'>Price ($)</h4>
            
@@ -149,6 +158,32 @@ const Checkbutton = () => {
       
 
       </div>
+      <div className=' mt-[30px] w-full h-fit  bg-white  border-[1px] border-[#00000026] shadow-lg p-[25px] rounded-[6px]'>
+         <h4 className='  mb-[15px] leading-[26px]  text-[17px]  text-blue-text font-semibold font-Outfit'>Price ($)</h4>
+          <div className=' mb-3 flex items-center  w-full '>
+             <div className=' flex items-center justify-center w-[24%] text-primary-color  bg-gray-300  px-[15px] py-[8px]   border-[1px] border-gray-300'>
+                <LuBadgeDollarSign size={24} /> 
+             </div >
+             <div className=' w-[80%] bg-white text-gray-700 px-[15px] py-[8px]  border-l-0 border-[1px] border-gray-300'>
+             <h3>{pricedata}</h3>
+             </div>
+          </div>  
+         <input  className=' w-full accent-primary-color bg-gray-300' type="range" min='0' max='100' step='1' value={pricedata} onChange={(e)=>setPricedata(e.target.value)}   />
+      </div>
+      {/* <div className=' mt-[30px] w-full h-fit  bg-white  border-[1px] border-[#00000026] shadow-lg p-[25px] rounded-[6px]'>
+          <h3>Price <span>Range</span></h3>
+          <div>
+             ${values[0]}-${values[1]}
+             <small>Current Range: $2324</small>
+             <Slider 
+               className=' w-full h-[15px] bg-gray-400'
+               onChange={setValues}
+               value={values}
+               min={MIN}
+               max={MAX}
+             />
+          </div>
+      </div> */}
       </div>
     </>
   )

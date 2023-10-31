@@ -3,12 +3,23 @@
 @tailwind utilities;
 
 .slick-slide > div {
-    margin: 0 26px;
+    margin: 0 12px;
+    overflow: hidden;
+    
   }
-  .slick-slide > div:nth-child(1) {
+  /* .slick-slide > div:nth-child(1) {
     margin-left: 0;
-  }
-  .slick-list {
+  } */
+  /* .slick-list {
     margin-right: -26px;
-  }
+  } */
   
+  .slider .thumb {
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    background: rebeccapurple;
+    border-radius: 50%;
+    border: 2px solid #275efe;
+
+  }

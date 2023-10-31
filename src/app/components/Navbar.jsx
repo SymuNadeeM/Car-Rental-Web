@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className={colorChange?" hidden md:flex  fixed top-0 left-0 duration-500 right-0 z-50 bg-white text-blue-text  md:px-[100px] ":" duration-500 hidden md:flex  bg-transparent text-white  md:px-[100px]"}>
+      <div className={colorChange?" hidden md:flex  fixed top-0 left-0 duration-500 right-0 z-50 shadow-md bg-white text-blue-text  md:px-[100px] ":" duration-500 hidden md:flex  bg-transparent text-white  md:px-[100px]"}>
          <div className='px-[15px] flex items-center justify-between gap-[102px]'>
                <Link href={'/'}>
                    <Image src={logo}  alt=';'  />
