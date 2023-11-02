@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import newpic1 from '../assets/newspic.jpg'
 import newpic2 from '../assets/newspic2.jpg'
@@ -7,6 +8,7 @@ import menpic from '../assets/1.jpg'
 import React from 'react'
 import { BsCalendarDate } from 'react-icons/bs'
 import Link from 'next/link'
+import CardSlider from './CardSlider'
 import { BiSolidQuoteRight } from 'react-icons/bi'
 
 const NewSidbar = () => {
@@ -102,6 +104,7 @@ const NewSidbar = () => {
                 </div>
             </div>
         </div>    
+        {/* <CardSlider /> */}
       </div>
     </>
   )

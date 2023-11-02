@@ -11,6 +11,12 @@ import React, { useState } from 'react'
 const Navbar = () => {
 
    const [colorChange, setColorChange] = useState(false)
+   const [menuOpen,setmenuOpen] = useState(false)
+  const [isOpenHome, setIsOpenHome] =useState(false)
+  const [isOpenCarlist, setIsOpenCarlist] =useState(false)
+  const [isOpenAccount, setIsOpenAccount] =useState(false)
+  const [isOpenPages, setIsOpenPages] =useState(false)
+  const [isOpenNews, setIsOpenNews] =useState(false)
 
    const changeNavbarColor =()=>{
     if(window.scrollY >= 80){
@@ -23,8 +29,7 @@ const Navbar = () => {
    window.addEventListener('scroll', changeNavbarColor)
 
  
-  const [menuOpen,setmenuOpen] = useState(false)
-  const [isOpen, setIsOpen] =useState(false)
+  
 
 
   const handlemenu =()=>{
@@ -100,7 +105,7 @@ const Navbar = () => {
       </div> 
        
        {/* small sceen */}
-       <div className=' md:hidden fixed top-0 right-0 left-0 z-50 bg-white w-full h-[80px] px-[20px]'>
+       <div className=' md:hidden fixed top-0 right-0 left-0 z-50 bg-white shadow-xl w-full h-[80px] px-[20px]'>
            
             <div className=' flex items-center   justify-between'>
                {/* logo */}
@@ -113,11 +118,11 @@ const Navbar = () => {
                <FiMenu  size={30} />
                </div>
              </div>
-             <div className={ menuOpen ?"fixed z-50 left-0 top-0 w-[60%] h-full overflow-auto  ease-in-out duration-700 bg-[#acacac]" :"fixed left-[-100%] duration-200"}>
+             <div className={ menuOpen ?"fixed z-50 left-0 top-0 w-[65%]  h-full overflow-auto  ease-in-out duration-700 bg-[#d3d1d1]" :"fixed left-[-100%] duration-200"}>
             <div className=" ">
-                 <div className=" flex items-center justify-between p-[12px] bg-white ">
+                 <div className=" flex items-center justify-between p-[12px]  bg-white ">
                       <Link href={"/"} className="flex mr-[30px] relative">
-                      <Image src={logo} alt=""  className=" text-primary-color"/>
+                      <Image src={logo} alt=""  className=" text-primary-color "/>
                       
                       </Link>
                      <GrFormClose onClick={handlemenu}   className=" w-[36px] h-[36px] p-[4px] mt-[4px] text-white bg-primary-color" />
@@ -125,28 +130,131 @@ const Navbar = () => {
               <nav className="py-[10px] snap-y z-40">
                 <ul>
                   <li className=" relative h-auto  px-[20px]">
-                   <div onClick={()=> setIsOpen(!isOpen)} className=" flex items-center justify-between  border-b-[1px] border-[#eee]  ">
+                   <div onClick={()=> setIsOpenHome(!isOpenHome)} className=" flex items-center justify-between  border-b-[1px] border-[#eee]  ">
                       <button  className=" flex  relative text-[16px]  py-[12px]">
                         <Link href={'/'}>Home</Link>
                       </button>
                         <h4 className=" text-[16px]">
                       {
-                       !isOpen? (<MdKeyboardArrowRight className=" h-8" />) :(<MdKeyboardArrowDown  />)
+                       !isOpenHome? (<MdKeyboardArrowRight className=" h-8" />) :(<MdKeyboardArrowDown  />)
                       }
                    
                        </h4>
                    </div>
               
-                  {isOpen && <div className="  bg-slate-200 px-[20px] "> 
+                  {isOpenHome && <div className="  bg-slate-100  duration-500 "> 
                      <ul>
-                      <li className=" py-[12px] pr-[30px]  border-b-[1px] border-[#bbbb]"><Link href={'/'} onClick={handlemenu} >HomePage 1</Link></li>
-                      <li className=" py-[12px] pr-[30px] border-b-[1px] border-[#bbbb]"><Link href={'/'} onClick={handlemenu} >HomePage 2</Link></li>
-                      <li className=" py-[12px] pr-[30px] border-b-[1px] border-[#bbbb]"><Link href={'/'} onClick={handlemenu} >Homepage Main</Link></li>
-                      <li className=" py-[12px] pr-[30px] border-b-[1px] border-[#bbbb]"><Link href={'/'} onClick={handlemenu} >Home 3</Link></li>
-                      <li className=" py-[12px] pr-[30px] border-b-[1px] border-[#bbbb]"><Link href={'/'} onClick={handlemenu} >Home 4</Link></li>
-                      <li className=" py-[12px] pr-[30px] border-b-[1px] border-[#bbbb]"><Link href={'/'} onClick={handlemenu} >Home 5</Link></li>
-                      <li className=" py-[12px] pr-[30px] border-b-[1px] border-[#bbbb]"><Link href={'/'} onClick={handlemenu} >Home 6</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/'} onClick={handlemenu} >HomePage 1</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/'} onClick={handlemenu} >HomePage 2</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/'} onClick={handlemenu} >Homepage Main</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/'} onClick={handlemenu} >Home 3</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/'} onClick={handlemenu} >Home 4</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/'} onClick={handlemenu} >Home 5</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/'} onClick={handlemenu} >Home 6</Link></li>
                       
+                     </ul>
+                  </div>}
+      
+                 </li>
+                  <li className=" relative h-auto  px-[20px]">
+                   <div onClick={()=> setIsOpenCarlist(!isOpenCarlist)} className=" flex items-center justify-between  border-b-[1px] border-[#eee]  ">
+                      <button  className=" flex  relative text-[16px]  py-[12px]">
+                        <Link href={''}>Cars</Link>
+                      </button>
+                        <h4 className=" text-[16px]">
+                      {
+                       !isOpenCarlist? (<MdKeyboardArrowRight className=" h-8" />) :(<MdKeyboardArrowDown  />)
+                      }
+                   
+                       </h4>
+                   </div>
+              
+                  {isOpenCarlist && <div className="  bg-slate-100  duration-500 "> 
+                     <ul>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/carlist'} onClick={handlemenu} >Cars List 1</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/carlist'} onClick={handlemenu} >Cars List 1 Dark</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/carlist'} onClick={handlemenu} >Cars single</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/carlist'} onClick={handlemenu} >Cars single dark</Link></li>
+                     </ul>
+                  </div>}
+      
+                 </li>
+                 <li className=" relative h-auto  px-[20px]">
+                   <div  className=" flex items-center justify-between  border-b-[1px] border-[#eee]  ">
+                      <button  className=" flex  relative text-[16px]  py-[12px]">
+                        <Link href={'/booking'}>Booking</Link>
+                      </button>
+                       
+                      
+                   </div>
+              
+                 
+      
+                 </li>
+                 <li className=" relative h-auto  px-[20px]">
+                   <div onClick={()=> setIsOpenAccount(!isOpenAccount)} className=" flex items-center justify-between  border-b-[1px] border-[#eee]  ">
+                      <button  className=" flex  relative text-[16px]  py-[12px]">
+                        <Link href={''}>My Account</Link>
+                      </button>
+                        <h4 className=" text-[16px]">
+                      {
+                       !isOpenAccount? (<MdKeyboardArrowRight className=" h-8" />) :(<MdKeyboardArrowDown  />)
+                      }
+                   
+                       </h4>
+                   </div>
+              
+                  {isOpenAccount && <div className="  bg-slate-100  duration-500 "> 
+                     <ul>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/myprofile'} onClick={handlemenu} >Dashboard</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/myprofile'} onClick={handlemenu} >My Profile</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/myfavo'} onClick={handlemenu} >My Orders</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/myfavo'} onClick={handlemenu} >My Favourite Cars</Link></li>
+                     </ul>
+                  </div>}
+      
+                 </li>
+                 <li className=" relative h-auto  px-[20px]">
+                   <div onClick={()=> setIsOpenPages(!isOpenPages)} className=" flex items-center justify-between  border-b-[1px] border-[#eee]  ">
+                      <button  className=" flex  relative text-[16px]  py-[12px]">
+                        <Link href={''}>Pages</Link>
+                      </button>
+                        <h4 className=" text-[16px]">
+                      {
+                       !isOpenPages? (<MdKeyboardArrowRight className=" h-8" />) :(<MdKeyboardArrowDown  />)
+                      }
+                   
+                       </h4>
+                   </div>
+              
+                  {isOpenPages && <div className="  bg-slate-100  duration-500 "> 
+                     <ul>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/aboutus'} onClick={handlemenu} >About Us</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/contactus'} onClick={handlemenu} >Contact</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/login'} onClick={handlemenu} >Login</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/resgister'} onClick={handlemenu} >Register</Link></li>
+                     </ul>
+                  </div>}
+      
+                 </li>
+                 <li className=" relative h-auto  px-[20px]">
+                   <div onClick={()=> setIsOpenNews(!isOpenNews)} className=" flex items-center justify-between  border-b-[1px] border-[#eee]  ">
+                      <button  className=" flex  relative text-[16px]  py-[12px]">
+                        <Link href={'/'}>News</Link>
+                      </button>
+                        <h4 className=" text-[16px]">
+                      {
+                       !isOpenNews? (<MdKeyboardArrowRight className=" h-8" />) :(<MdKeyboardArrowDown  />)
+                      }
+                   
+                       </h4>
+                   </div>
+              
+                  {isOpenNews && <div className="  bg-slate-100  duration-500 "> 
+                     <ul>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/mynews'} onClick={handlemenu} >News Standard</Link></li>
+                      <li className=" py-[12px] pr-[30px] px-[20px]  border-b-[1px] hover:bg-primary-color hover:text-white border-[#bbbb] duration-300"><Link href={'/'} onClick={handlemenu} >News Grid </Link></li>
+
                      </ul>
                   </div>}
       
