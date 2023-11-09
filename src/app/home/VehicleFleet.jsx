@@ -58,18 +58,18 @@ const VehicleFleet = () => {
     <>
       <section className='  py-[60px] px-[30px] md:py-[90px] md:px-[115px]'>
              <div className=' flex flex-col items-center justify-center'>
-                     <p className=' w-fit font-Inter font-bold bg-gray-text text-primary-color rounded-[5px] px-[10px] py-[2px] mb-[5px]'>Enjoy Your Ride</p>
-                     <h2 className=' font-semibold text-blue-text mb-[10px] text-[42px] tracking-tight leading-[50px]'>Our Vehicle Fleet</h2>
+                     <p className=' w-fit font-Inter font-bold bg-gray-text text-primary-color rounded-[5px] xs:text-[12px] md:text-[16px] px-[10px] py-[2px] mb-[5px]'>Enjoy Your Ride</p>
+                     <h2 className=' font-semibold text-blue-text mb-[10px] xs:text-[28px] md:text-[42px] tracking-tight xs:leading-[40px] md:leading-[50px]'>Our Vehicle Fleet</h2>
                      <p className='   text-center text-blue-text drop-shadow-md' >Driving your dreams to reality with an exquisite fleet of versatile vehicles</p>
                      <p className='mb-[20px] text-blue-text drop-shadow-md'>  for unforgettable journeys.</p>
              </div>
              <div className=' relative mt-[25px]   '>
              <Slider {...settings} className='  '>
-                   <div className='   w-[355px] h-auto   bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
+                   <div className=' w-[355px] h-auto   bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
                          <div>
                              <Image src={vecile} alt=''  className=' w-full md:w-[335px] h-[187px] rounded-[6px]' />
                          </div>
-                         <div className='p-[20px]'>
+                         <div className='xs:p-[10px] p-[20px]'>
                             <div className=' flex items-center justify-between'>
                                <h4 className=' text-right mb-[3px] leading-[26px]  text-[17px] drop-shadow-md text-blue-text font-semibold font-Inter'>Ferarri Enzo </h4>
                                 <div className=' flex items-center text-[15px] gap-[4px] font-medium text-[#acacac]'>
@@ -100,17 +100,17 @@ const VehicleFleet = () => {
                                             <p className='text-[14px] text-[#acacac] '>Daily rate from</p>
                                             <h4 className=' font-bold text-[26px] text-blue-text'>$265</h4>
                                        </div>
-                                      <button className=' font-extrabold text-[14px] text-white bg-primary-color rounded-[5px] py-[4px] px-[15px]'><Link href={''}>Rent Now</Link></button>
+                                      <button className=' xs:font-semibold font-extrabold xs:text-[12px] text-[14px] text-white bg-primary-color rounded-[5px] py-[4px] xs:px-[10px] px-[15px]'><Link href={''}>Rent Now</Link></button>
                                        
                             </div>
                             
                          </div>
                    </div>
-                   <div className=' w-[355px] h-auto  bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
+                   <div className=' w-[355px] h-auto   bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
                          <div>
                              <Image src={vecile1} alt=''  className=' w-full md:w-[335px] h-[187px] rounded-[6px]' />
                          </div>
-                         <div className='p-[20px]'>
+                         <div className='xs:p-[10px] p-[20px]'>
                             <div className=' flex items-center justify-between'>
                                <h4 className=' text-right mb-[3px] leading-[26px]  text-[17px] drop-shadow-md text-blue-text font-semibold font-Inter'>Ferarri Enzo </h4>
                                 <div className=' flex items-center text-[15px] gap-[4px] font-medium text-[#acacac]'>
@@ -141,17 +141,17 @@ const VehicleFleet = () => {
                                             <p className='text-[14px] text-[#acacac] '>Daily rate from</p>
                                             <h4 className=' font-bold text-[26px] text-blue-text'>$265</h4>
                                        </div>
-                                      <button className=' font-extrabold text-[14px] text-white bg-primary-color rounded-[5px] py-[4px] px-[15px]'><Link href={''}>Rent Now</Link></button>
+                                      <button className=' xs:font-semibold font-extrabold xs:text-[12px] text-[14px] text-white bg-primary-color rounded-[5px] py-[4px] xs:px-[10px] px-[15px]'><Link href={''}>Rent Now</Link></button>
                                        
                             </div>
                             
                          </div>
                    </div>
-                   <div className=' w-[355px] h-auto  bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
+                   <div className=' w-[355px] h-auto   bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
                          <div>
                              <Image src={vecile2} alt=''  className=' w-full md:w-[335px] h-[187px] rounded-[6px]' />
                          </div>
-                         <div className='p-[20px]'>
+                         <div className='xs:p-[10px] p-[20px]'>
                             <div className=' flex items-center justify-between'>
                                <h4 className=' text-right mb-[3px] leading-[26px]  text-[17px] drop-shadow-md text-blue-text font-semibold font-Inter'>Ferarri Enzo </h4>
                                 <div className=' flex items-center text-[15px] gap-[4px] font-medium text-[#acacac]'>
@@ -182,17 +182,17 @@ const VehicleFleet = () => {
                                             <p className='text-[14px] text-[#acacac] '>Daily rate from</p>
                                             <h4 className=' font-bold text-[26px] text-blue-text'>$265</h4>
                                        </div>
-                                      <button className=' font-extrabold text-[14px] text-white bg-primary-color rounded-[5px] py-[4px] px-[15px]'><Link href={''}>Rent Now</Link></button>
+                                      <button className=' xs:font-semibold font-extrabold xs:text-[12px] text-[14px] text-white bg-primary-color rounded-[5px] py-[4px] xs:px-[10px] px-[15px]'><Link href={''}>Rent Now</Link></button>
                                        
                             </div>
                             
                          </div>
                    </div>
-                   <div className=' w-[355px] h-auto  bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
+                   <div className=' w-[355px] h-auto   bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
                          <div>
-                             <Image src={vecile3} alt=''  className='w-full md:w-[335px] h-[187px] rounded-[6px]' />
+                             <Image src={vecile3} alt=''  className=' w-full md:w-[335px] h-[187px] rounded-[6px]' />
                          </div>
-                         <div className='p-[20px]'>
+                         <div className='xs:p-[10px] p-[20px]'>
                             <div className=' flex items-center justify-between'>
                                <h4 className=' text-right mb-[3px] leading-[26px]  text-[17px] drop-shadow-md text-blue-text font-semibold font-Inter'>Ferarri Enzo </h4>
                                 <div className=' flex items-center text-[15px] gap-[4px] font-medium text-[#acacac]'>
@@ -223,17 +223,17 @@ const VehicleFleet = () => {
                                             <p className='text-[14px] text-[#acacac] '>Daily rate from</p>
                                             <h4 className=' font-bold text-[26px] text-blue-text'>$265</h4>
                                        </div>
-                                      <button className=' font-extrabold text-[14px] text-white bg-primary-color rounded-[5px] py-[4px] px-[15px]'><Link href={''}>Rent Now</Link></button>
+                                      <button className=' xs:font-semibold font-extrabold xs:text-[12px] text-[14px] text-white bg-primary-color rounded-[5px] py-[4px] xs:px-[10px] px-[15px]'><Link href={''}>Rent Now</Link></button>
                                        
                             </div>
                             
                          </div>
                    </div>
-                   <div className=' w-[355px] h-auto  bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
+                   <div className=' w-[355px] h-auto   bg-white p-[10px] shadow-xl rounded-[6px] border-[1px] border-[#dddddd] '>
                          <div>
-                             <Image src={vecile4} alt=''  className='w-full md:w-[335px] h-[187px] rounded-[6px]' />
+                             <Image src={vecile4} alt=''  className=' w-full md:w-[335px] h-[187px] rounded-[6px]' />
                          </div>
-                         <div className='p-[20px]'>
+                         <div className='xs:p-[10px] p-[20px]'>
                             <div className=' flex items-center justify-between'>
                                <h4 className=' text-right mb-[3px] leading-[26px]  text-[17px] drop-shadow-md text-blue-text font-semibold font-Inter'>Ferarri Enzo </h4>
                                 <div className=' flex items-center text-[15px] gap-[4px] font-medium text-[#acacac]'>
@@ -264,12 +264,13 @@ const VehicleFleet = () => {
                                             <p className='text-[14px] text-[#acacac] '>Daily rate from</p>
                                             <h4 className=' font-bold text-[26px] text-blue-text'>$265</h4>
                                        </div>
-                                      <button className=' font-extrabold text-[14px] text-white bg-primary-color rounded-[5px] py-[4px] px-[15px]'><Link href={''}>Rent Now</Link></button>
+                                      <button className=' xs:font-semibold font-extrabold xs:text-[12px] text-[14px] text-white bg-primary-color rounded-[5px] py-[4px] xs:px-[10px] px-[15px]'><Link href={''}>Rent Now</Link></button>
                                        
                             </div>
                             
                          </div>
                    </div>
+                   
               </Slider>     
              </div>
 

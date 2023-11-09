@@ -11,12 +11,12 @@ const Banner = () => {
   return (
     <>
       <div className='relative'>
-         <Image alt='' src={bannar} className='w-full h-[1880px] md:h-[950px] bg-cover   ' />
+         <Image alt='' src={bannar} className='w-full xs:h-[1830px] sm:h-[1880px] md:h-[950px] bg-cover   ' />
       </div>
           
             <div className=' absolute top-0 left-0'> <Navbar />    </div>  
-            <div className='absolute top-[200px] bottom-[150px] px-[30px]  md:top-[150px] md:px-[115px] '>
-                <h1 className=' tracking-tight font-medium text-[52px] text-white opacity-100 leading-[55px] font-Outfit'>Looking for a<span className=' text-primary-color'> vehicle</span>? You are at the right place.</h1>
+            <div className='absolute xs:top-[150px] xs:bottom-[40px] xs:px-[20px] sm:top-[200px] sm:bottom-[150px] sm:px-[30px]  md:top-[150px] md:px-[115px] '>
+                <h1 className=' tracking-tight font-medium   xs:text-[25px] md:text-[52px] text-white opacity-100 xs:leading-[25px] leading-[55px] font-Outfit'>Looking for a<span className=' text-primary-color'> vehicle</span>? You are at the right place.</h1>
                <div className=' mt-[10px] py-[30px] md:py-[60px]'>
                    <div className=' bg-white rounded-[3px] p-[1.5rem]'>
                        <div className=' grid md:grid-cols-2 gap-[1.5rem]'>
@@ -127,7 +127,7 @@ const Banner = () => {
                                <div className=' flex items-center justify-center rounded-md text-[16px] text-center w-[45px] h-[45px] bg-primary-color text-white'>
                                 1
                                </div>
-                               <div className='ml-[50%] w-[.9px] h-[100px]  bg-primary-color'></div>
+                               <div className='ml-[50%] w-[.9px] xs:h-[120px] sm:h-[100px]  bg-primary-color'></div>
                            </div>
                          <div>
                             <h4 className=' text-[18px] mb-[10px] text-white leading-[26px] font-semibold'>Choose a vehicle</h4>
@@ -139,7 +139,7 @@ const Banner = () => {
                                <div className=' flex items-center justify-center rounded-md text-[16px] text-center w-[45px] h-[45px] bg-primary-color text-white'>
                                 2
                                </div>
-                               <div className=' ml-[50%] w-[.9px] h-[100px]  bg-primary-color'></div>
+                               <div className=' ml-[50%] w-[.9px] xs:h-[120px] sm:h-[100px]  bg-primary-color'></div>
                            </div>
                          <div>
                             <h4 className=' text-[18px] mb-[10px] text-white leading-[26px] font-semibold'>Pick location & date</h4>
@@ -151,7 +151,7 @@ const Banner = () => {
                                <div className=' flex items-center justify-center rounded-md text-[16px] text-center w-[45px] h-[45px] bg-primary-color text-white'>
                                 3
                                </div>
-                               <div className=' ml-[50%] w-[.9px] h-[100px]  bg-primary-color'></div>
+                               <div className=' ml-[50%] w-[.9px] xs:h-[120px] sm:h-[100px] bg-primary-color'></div>
                            </div>
                          <div>
                             <h4 className=' text-[18px] mb-[10px] text-white leading-[26px] font-semibold'>Make a booking</h4>

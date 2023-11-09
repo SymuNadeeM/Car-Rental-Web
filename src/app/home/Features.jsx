@@ -9,8 +9,8 @@ const Features = () => {
     <>
       <section className=' py-[60px] md:py-[90px] px-[30px] md:px-[115px]'>
              <div className=' text-center flex flex-col items-center justify-center '>
-                    <p className=' w-fit font-Inter font-bold bg-gray-text text-secondary-color rounded-[5px] px-[10px] py-[2px] mb-[5px]'>Why Choose Us</p>
-                    <h2 className=' font-semibold text-blue-text mb-[10px] text-[42px] tracking-tight leading-[50px]'>Our Features</h2>
+                    <p className=' w-fit font-Inter font-bold bg-gray-text text-secondary-color rounded-[5px] xs:text-[12px] md:text-[16px] px-[10px] py-[2px] mb-[5px]'>Why Choose Us</p>
+                    <h2 className=' font-semibold text-blue-text mb-[10px] xs:text-[28px] md:text-[42px] tracking-tight xs:leading-[40px]  md:leading-[50px]'>Our Features</h2>
                     <div className=' grid md:grid-cols-5 text-center '>
                       <div className=' grid col-span-1'></div>
                       <div className=' grid md:col-span-3'>

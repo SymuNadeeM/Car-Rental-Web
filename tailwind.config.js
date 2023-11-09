@@ -11,6 +11,16 @@ module.exports = {
       //   'inner-about': "url('/src/app/assets/inner-pagebg.jpg')",
         
       // },
+      screens: {
+        'xs':"320px",
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+    
+  
+        'xl': '1280px',
+      
+      },
       fontFamily:{
         'nunito':['Nunito Sans', "sans-serif"],
         'Inter': ['Inter', 'sans-serif'],

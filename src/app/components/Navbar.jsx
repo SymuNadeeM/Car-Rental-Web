@@ -45,7 +45,7 @@ const Navbar = () => {
                </Link>
                  <nav>
                  <ul className={colorChange?"flex  items-center  text-blue-text font-medium text-[15px] font-Inter":"flex  items-center  text-white font-medium text-[15px] font-Inter"}>
-                    <li className='py-[30px] pl-[30px] relative  group'><Link href={"/"} className=' flex items-center  font-medium gap-1'>Home <FiChevronDown /></Link> 
+                    <li className='py-[30px] pl-[30px] relative  group '><Link href={"/"} className=' flex items-center  font-medium gap-1'>Home <FiChevronDown /></Link> 
                         <ul className="z-10  absolute duration-300  invisible group-hover:visible text-text-black font-medium text-[15px] font-Inter bg-white rounded-[3px]  mt-[30px]  w-[190px]  h-auto shadow-xl">
                             <li className=" border-b-[1px] border-[#ffffff1a] px-[15px] py-[5px] hover:bg-secondary-color hover:text-white duration-300" ><Link href={"/"} >New: Homepage Dark</Link> </li>
                             <li className=" border-b-[1px] border-[#ffffff1a] px-[15px] py-[5px] hover:bg-secondary-color hover:text-white duration-300" ><Link href={"/"} >Homepage Main</Link> </li>
